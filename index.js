@@ -37,6 +37,8 @@ class Novel extends Book {
    doDiscard() { //discard if numchecked > 100
       if (this.numChecked > 100){
         this.isDiscarded = true; 
+      } else {
+        this.isDiscarded = false; 
       }
    }
 }
@@ -45,4 +47,11 @@ let novel = new Novel("Pride and Prejudice", "Jane Austen", 1813, 1111111111111,
 
 let manual = new Manual("Top Secret Shuttle Building Manual", "Redacted", 2013, 0000000000000, 1, 1147, false);
 
-// console.log(novel.copyrightDate);
+console.log(novel.copyrightDate);
+
+console.log(manual.isDiscarded)
+manual.doDiscard();
+console.log(manual.isDiscarded)
+
+novel.checkedOut(5);
+console.log(novel.doDiscard())
