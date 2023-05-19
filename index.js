@@ -41,14 +41,8 @@ class Novel extends Book {
    }
 }
 
-let tome1 = new Novel("Pride and Prejudice", "Jane Austen", 1813, 1111111111111, 32, 432, false);
+let novel = new Novel("Pride and Prejudice", "Jane Austen", 1813, 1111111111111, 32, 432, false);
 
-let tome2 = new Manual("Top Secret Shuttle Building Manual", "Redacted", 2013, 0000000000000, 1, 1147, false);
+let manual = new Manual("Top Secret Shuttle Building Manual", "Redacted", 2013, 0000000000000, 1, 1147, false);
 
-tome1.doDiscard();
-console.log(tome1.isDiscarded);
-
-tome2.checkedOut(5);
-tome2.doDiscard();
-console.log(tome2.isDiscarded);
-tome2
+console.log(novel.copyrightDate);
